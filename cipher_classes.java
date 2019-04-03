@@ -24,13 +24,10 @@ public class cipher_classes {
 		
 		String encrypted=new String();
 		
-        for(int i=0;i<eString.length();i++) {
-			
-			encrypted+=(char)(eString.charAt(i)+n);
-			
+                for(int i=0;i<eString.length();i++) {	
+			encrypted+=(char)(eString.charAt(i)+n);		
 		}
         
-        //System.out.print(encrypted);
         
         return encrypted;
 	}
@@ -46,15 +43,12 @@ public class cipher_classes {
 		        sb.append(System.lineSeparator());
 		        line = br.readLine();
 		    }
-		    
-		    
-		    
+		    		    
 		    String everything = sb.toString();
 		    
 		    //deletes old file and contents
 		    File encryptedFile= new File("C://dir//user//encryptedFile.txt");
-		    
-		    
+		    		    
 		    System.out.println("Attempting to encrypt your string using length of "
 			+ encryptLength + "...\n\n");
 		    encryptString(everything, encryptLength);
